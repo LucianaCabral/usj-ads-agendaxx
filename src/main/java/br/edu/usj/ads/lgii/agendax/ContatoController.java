@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ContatoController {
    @Autowired 
    ContatoRepository contatoRepository;
+   
    @GetMapping(value="/") //raiz
    public ModelAndView getListaTodos() {//raiz
        List<Contato> lista = contatoRepository.findAll();//raiz
